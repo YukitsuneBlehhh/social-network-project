@@ -1,0 +1,4 @@
+First Color: #41A67E
+Second Color: #05339C
+Third Color: #1055C9
+Fourth Color: #E5C95F

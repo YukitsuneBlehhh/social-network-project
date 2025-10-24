@@ -1,0 +1,76 @@
+body {
+    font-family: "Righteous", sans-serif;
+    background-color: #41A67E;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 60px;
+    color: #E5C95F;
+    text-shadow: 0px 5px #1055C9;
+    -webkit-text-stroke: 2px black ;
+}
+
+h2 {
+    text-shadow: 0px 0px 5px #05339C;
+}
+
+button {
+    font-size: 17px;
+    font-family: "Righteous", sans-serif;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #05339C;
+    color: #E5C95F;
+    border-color: #1055C9;
+    border-radius: 5px;
+}
+
+button:active {
+    color: #41A67E;
+}
+
+button:hover {
+    text-shadow: 0px 0px 15px #41A67E;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: 'Grandstander';
+    font-size: 15px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.postItem{
+    background-color: #41A67E;
+    border: 2px solid #05339C;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 2px;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.editForm{
+    display: none;
+    margin-top: 10px;
+}
+
