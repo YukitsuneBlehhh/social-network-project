@@ -87,10 +87,8 @@ ul{
 }
 
 
-
 @keyframes intro {
    1% {opacity: 0; margin-right: 100px;}
    100% {opacity: 1;}
 }
-
 
