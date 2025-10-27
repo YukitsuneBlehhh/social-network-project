@@ -30,7 +30,7 @@ function renderPostList(){
            <label for="editTitle">Título: </label>
            <input type="text" id="editTitle-${post.id}" value="${post.title}" required>
            <label for="editBody"> Comentario: </label>
-           <textarea id="editBody-${post.id}"<required>${post.body}</textarea>
+           <textarea id="editBody-${post.id}" required> ${post.body}</textarea>
            <button onclick="updatePost(${post.id})"> Actualizar </button>
         </div>
         `
@@ -55,22 +55,23 @@ function postData() {
         body: JSON.stringify({
             title: postTitle,
             body: postBody,
-            userID      : 1,
+            userID: 1,
         }),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },
-        })
-
-.then((res) => res.json())
-.then(data => {
-    posts.unshift(data)
-    renderPostList();
-    postTitleInput.value = ''
-    postBodyInput.value = ''
-})
-
-.catch(error => console.error('Error al querer crear posteo: ', error))
+    })
+    .then((res) => res.json())
+    .then(data => {
+        
+        data.id = posts.length > 0 ? posts[0].id + 1 : 101;
+        
+        posts.unshift(data)
+        renderPostList();
+        postTitleInput.value = ''
+        postBodyInput.value = ''
+    })
+    .catch(error => console.error('Error al querer crear posteo: ', error))
 }
 
 
