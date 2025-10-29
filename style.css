@@ -92,3 +92,23 @@ ul{
    100% {opacity: 1;}
 }
 
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    input,
+    textarea {
+        width: 250px;
+    }
+
+    .postItem {
+        position: relative;
+        right: 35%;
+        width: 400px;
+    }
+
+}
+
+
