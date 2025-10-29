@@ -43,6 +43,8 @@ button:hover {
 
 form {
     margin-top: 20px;
+    display: block;
+    justify-content: center;
 }
 
 label {
@@ -110,5 +112,6 @@ ul{
     }
 
 }
+
 
 
