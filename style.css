@@ -14,7 +14,7 @@ h1 {
     font-size: 60px;
     color: #E5C95F;
     text-shadow: 0px 5px #1055C9;
-    -webkit-text-stroke: 2px black ;
+    -webkit-text-stroke: 2px black;
 }
 
 h2 {
@@ -52,7 +52,8 @@ label {
     margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -65,33 +66,40 @@ input, textarea {
     resize: none;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0px;
 }
 
-.postItem{
+.postItem {
     background-color: #41A67E;
     border: 2px solid #05339C;
     border-radius: 5px;
     margin: 10px;
     padding: 2px;
     box-shadow: 0px 0px 10px #000000;
-    word-wrap: break-word; 
-    overflow-wrap: break-word;   
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 
-.editForm{
+.editForm {
     display: none;
     margin-top: 10px;
     padding: 10px;
 }
 
 
+
 @keyframes intro {
-   1% {opacity: 0; margin-right: 100px;}
-   100% {opacity: 1;}
+    1% {
+        opacity: 0;
+        margin-right: 100px;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
@@ -112,6 +120,26 @@ ul{
     }
 
 }
+
+@media (max-width: 360px) {
+    
+     h1 {
+        font-size: 40px;
+    }
+
+    input,
+    textarea {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .postItem {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+}
+
 
 
 
