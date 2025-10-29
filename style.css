@@ -90,7 +90,6 @@ ul {
 }
 
 
-
 @keyframes intro {
     1% {
         opacity: 0;
@@ -130,15 +129,18 @@ ul {
     input,
     textarea {
         width: 50%;
+        min-width: 160px;
         margin: 0 auto;
     }
 
     .postItem {
         width: 50%;
+        min-width: 200px;
         margin: 0 auto;
     }
     
 }
+
 
 
 
