@@ -100,13 +100,13 @@ ul{
 
     input,
     textarea {
-        width: 250px;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .postItem {
-        position: relative;
-        right: 35%;
-        width: 400px;
+        width: 50%;
+        margin: 0 auto;
     }
 
 }
